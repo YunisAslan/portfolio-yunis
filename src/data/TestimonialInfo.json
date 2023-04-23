@@ -1,0 +1,50 @@
+[
+    {
+        "testimonial_id": 1,
+        "testimonial_picture": "https://res.cloudinary.com/drx9zihrg/image/upload/v1676523389/MEE_llkjxw_e062ca.jpg",
+        "testimonial_person": "Alpay Abdullayev",
+        "testimonial_text": "Yunis Bəy, sizə gələcək işlərinizdə uğurlar.Sizinlə birgə işləmək arzusu ilə.Bacarıqlarınız və özünüz ciddən çox gözəldir."
+    },
+    {
+        "testimonial_id": 2,
+        "testimonial_picture": "https://res.cloudinary.com/drx9zihrg/image/upload/v1676521827/326552520_1242955743239620_8357051666661612076_n_e1pbge.jpg",
+        "testimonial_person": "Anvar Khalid",
+        "testimonial_text": "Yunis mənim ən savadlı, ən ağıllı, ən tərbiyəli, yüksək ali dəyərlərə sahib bir şəxsiyyət, tələbəmdir. Qürur duyuram ki, həyatımdan bir Aslan keçdi və sizi unutmaq olmaz. Siz mənim brend tələbəmsiniz."
+    },
+    {
+        "testimonial_id": 3,
+        "testimonial_picture": "https://res.cloudinary.com/drx9zihrg/image/upload/v1676523117/62fb5a9e-b470-4f6b-8929-9db2a83eca61_maxfpl_9051f0.jpg",
+        "testimonial_person": "Elmir Sultan",
+        "testimonial_text": "Gördüyüm ən savadlı və çalışqan developerlərdən biridir.Gələcəkdə uğurlu olacağından heç bir şübhəm yoxdur."
+    },
+    {
+        "testimonial_id": 4,
+        "testimonial_picture": "https://res.cloudinary.com/drx9zihrg/image/upload/v1676566230/1e491183-eb2a-478b-9118-212fcd18eaab_ctmany_f59225.jpg",
+        "testimonial_person": "Mehriban Xəlilova",
+        "testimonial_text": "Yunis, o həqiqətən həvəslidir və çox çalışqandır. Düşünürəm ki, teamwork üçün əla developer olar. Yazdığı saytlar müasir və əla görünür. Gələcək karyerasında uğurlar !"
+    },
+    {
+        "testimonial_id": 5,
+        "testimonial_picture": "https://res.cloudinary.com/drx9zihrg/image/upload/v1676522241/1fef847bb3452006d4ed3289aa8db9c0_xnytno.jpg",
+        "testimonial_person": "Lorem Ipsum",
+        "testimonial_text": "Dolor sit, amet consectetur adipisicing elit. Incidunt, at!"
+    },
+    {
+        "testimonial_id": 6,
+        "testimonial_picture": "https://res.cloudinary.com/drx9zihrg/image/upload/v1676522241/1fef847bb3452006d4ed3289aa8db9c0_xnytno.jpg",
+        "testimonial_person": "Lorem Ipsum",
+        "testimonial_text": "Dolor sit, amet consectetur adipisicing elit. Incidunt, at!"
+    },
+    {
+        "testimonial_id": 7,
+        "testimonial_picture": "https://res.cloudinary.com/drx9zihrg/image/upload/v1676522241/1fef847bb3452006d4ed3289aa8db9c0_xnytno.jpg",
+        "testimonial_person": "Lorem Ipsum",
+        "testimonial_text": "Dolor sit, amet consectetur adipisicing elit. Incidunt, at!"
+    },
+    {
+        "testimonial_id": 8,
+        "testimonial_picture": "https://res.cloudinary.com/drx9zihrg/image/upload/v1676522241/1fef847bb3452006d4ed3289aa8db9c0_xnytno.jpg",
+        "testimonial_person": "Lorem Ipsum",
+        "testimonial_text": "Dolor sit, amet consectetur adipisicing elit. Incidunt, at!"
+    }
+]
