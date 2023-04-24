@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import Button from "../components/ui/Button";
 import { BsSun, BsMoon } from "react-icons/bs";
+import { useTheme } from "../hooks/useTheme";
 
-const ThemeChanger = () => {
+const ThemeSwitcher = () => {
 
-    // for dark/light mode
-    const [theme, setTheme] = useState(
-        localStorage.getItem("theme")
-    );
+    const { theme, setTheme } = useTheme()
+
+    const handleTheme = () => {
+        setTheme(theme === "dark" ? "light" : "dark")
+    }
 
     useEffect(() => {
         if (theme === "dark") {
@@ -19,10 +21,6 @@ const ThemeChanger = () => {
         }
     }, [theme])
 
-    const handleTheme = () => {
-        setTheme(theme === "dark" ? "light" : "dark")
-    }
-
     return (
         <>
             <Button onClick={handleTheme} variant="ghost">
@@ -32,4 +30,4 @@ const ThemeChanger = () => {
     )
 };
 
-export default ThemeChanger;
+export default ThemeSwitcher;

@@ -7,12 +7,12 @@ const Introduction = () => {
     <>
 
       <section className="introduction flex flex-col items-center lg:mt-24 mm:mt-32">
-        <h2 className='lg:text-[4.375rem] font-bold text-transparent bg-clip-text mm:text-[2.7rem]
-        dark:text-white'
+        <h2 className='lg:text-[4.375rem] font-bold text-transparent bg-clip-text mm:text-[2.7rem] dark:text-white'
           data-aos="fade"
           data-aos-easing="ease-out"
-          data-aos-duration="600"
-        >Hi, I'm Yunis.</h2>
+          data-aos-duration="600">
+          Hi, I'm Yunis.
+        </h2>
         <span className='flex items-center text-[1.1rem] dark:text-white font-semibold text-transparent bg-clip-text'
           data-aos="fade"
           data-aos-easing="ease-out"

@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 
-import UseNavigate from '../hooks/UseNavigate'
+import BackHomeBtn from '../components/ui/BackHomeBtn';
 
 // EMAILJS
 import emailjs from '@emailjs/browser';
@@ -31,7 +31,7 @@ const Contact = () => {
         <>
             <section className="contact">
 
-                <UseNavigate />
+                <BackHomeBtn />
 
                 <h2 className='text-4xl font-bold flex justify-center dark:text-gray-100'
                     data-aos="fade"

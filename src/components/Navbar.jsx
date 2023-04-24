@@ -1,42 +1,23 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState } from 'react'
 // ICONS
 import { HiBars3 } from "react-icons/hi2";
 import { GrHomeRounded } from "react-icons/gr";
 import { RxPerson, RxCross1 } from "react-icons/rx";
 import { CiMail } from "react-icons/ci";
 
-//IMAGES
-import SiteLogoWhite from '../assets/images/yunis-logo-white.png';
-import SiteLogoBlack from '../assets/images/yunis-logo.png'
-
-import { NavLink } from 'react-router-dom';
+import BrandLogo from './ui/BrandLogo';
 import Button from './ui/Button';
-import ThemeChanger from '../theme/ThemeChanger';
-import SiteLogo from './SiteLogo';
+import { NavLink } from 'react-router-dom';
+import ThemeSwitcher from '../theme/ThemeSwitcher';
+
+import { useTheme } from '../hooks/useTheme';
 
 const Navbar = () => {
 
     // for navbar menu
     const [open, setOpen] = useState(false)
-    const menuRef = useRef(null)
 
-    const handleClose = () => {
-        setOpen(!open);
-    };
-
-    useEffect(() => {
-        const handleOutsideClick = (event) => {
-            if (menuRef.current && !menuRef.current.contains(event.target)) {
-                handleClose();
-            }
-        };
-
-        document.addEventListener("mousedown", handleOutsideClick);
-
-        return () => {
-            document.removeEventListener("mousedown", handleOutsideClick);
-        };
-    }, [menuRef, handleClose]);
+    const { theme } = useTheme()
 
     return (
         <>
@@ -46,17 +27,20 @@ const Navbar = () => {
                 data-aos-duration="600"
             >
 
-                <SiteLogo />
+                {theme === 'dark'
+                    ? <BrandLogo fill={"#fff"} width={100} />
+                    : <BrandLogo fill={"#000"} width={100} />}
+
 
                 <div className="navbar flex items-center">
 
-                    <ThemeChanger />
+                    <ThemeSwitcher />
 
-                    <Button onClick={handleClose} className="m-2" variant="circle">
-                        {open ? <RxCross1 className='text-2xl' /> : <HiBars3 />}
+                    <Button onClick={() => setOpen(!open)} className="m-2 btn-btn" variant="circle">
+                        {open ? <RxCross1 className='text-2xl' /> : <HiBars3 className='' />}
                     </Button>
 
-                    <div ref={menuRef} className={`dropdown-menu ${open ? 'active' : 'inactive'} bg-white w-[13rem] h-[10rem] rounded-lg
+                    <div className={`dropdown-menu ${open ? 'active' : 'inactive'} bg-white w-[13rem] h-[10rem] rounded-lg
                     mm:right-10 md:right-16 lg:right-40 top-28 absolute flex flex-col pl-6 pt-3 font-semibold text-lg z-50`}>
                         <ul>
                             <li>

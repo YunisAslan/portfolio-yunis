@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 import Button from '../components/ui/Button'
-import UseNavigate from '../hooks/UseNavigate'
+import BackHomeBtn from '../components/ui/BackHomeBtn'
 
 // MY PHOTO
 import ownImg from '../assets/images/photo-for-everything-4.jpg'
@@ -11,10 +11,11 @@ import ownImg from '../assets/images/photo-for-everything-4.jpg'
 import MYCV from '../assets/Resume.pdf'
 
 const About = () => {
+
     return (
         <section className="about-section">
 
-            <UseNavigate />
+            <BackHomeBtn />
 
             <div className="own-picture flex justify-center"
                 data-aos="fade"
