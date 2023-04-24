@@ -9,18 +9,6 @@
   body {
     @apply dark:bg-slate-900 dark:bg-gradient-to-t dark:from-slate-900 dark:to-slate-900 bg-gradient-to-t from-BgFrom to-BgTo
   }
-
-  .wrapper {
-    @apply mm:px-[1.6rem] md:px-[3rem] lg:px-[10rem]
-  }
-
-  .my-custom-btn {
-    @apply bg-white font-semibold hover:bg-gray-200 rounded-md px-4 py-3 mt-5 text-black hover:text-white
-  }
-
-  .submitBtn {
-    @apply sm:w-[30rem] mm:w-[17rem]
-  }
 }
 
 @layer base {
@@ -106,20 +94,19 @@
 
   .button-left {
     background: rgb(22, 11, 87);
-    border: 2px solid white;
     display: inline-block;
     padding: 15px 45px 15px 40px;
     position: relative;
     text-decoration: none;
-    transition: all .9s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: all .6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     z-index: 1;
   }
 
   .button-left::after,
   .button-left::before {
     background: rgb(22, 11, 87);
-    transition: all .9s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    border-radius: 6px;
+    transition: all .6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    border-radius: 2px;
     content: '';
     position: absolute;
     z-index: -1;

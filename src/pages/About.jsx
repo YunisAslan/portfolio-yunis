@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-import Button from '../components/Button'
+import Button from '../components/ui/Button'
 import UseNavigate from '../hooks/UseNavigate'
 
 // MY PHOTO
@@ -42,11 +42,17 @@ const About = () => {
                 <br />
                 <p>Outside of development, I love reading books and listening to different styles of music. I also enjoy spending time with my friends and family.</p>
                 <br />
-                <p>If you want to chat, feel free to <NavLink to="/contact" className='font-bold underline decoration-slate-900 transition-all hover:bg-slate-400 dark:hover:text-slate-900 rounded-sm p-1'>reach out.</NavLink></p>
+                <p>If you want to chat, feel free to
+                    <NavLink to="/contact" className='font-bold underline decoration-slate-900 transition-all hover:bg-slate-400 dark:hover:text-slate-900 rounded-sm p-1'>
+                        reach out.
+                    </NavLink>
+                </p>
 
 
                 <a href={MYCV} download>
-                    <Button btnText="Download CV" className="my-custom-btn button-left left" />
+                    <Button className="button-left left mt-5" variant="primary">
+                        Download CV
+                    </Button>
                 </a>
 
             </div>

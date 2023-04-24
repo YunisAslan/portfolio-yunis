@@ -25,9 +25,7 @@ function App() {
     <>
       <BrowserRouter>
 
-        <div className="wrapper">
-          <Navbar />
-        </div>
+        <Navbar />
 
         <Routes>
           <Route path="/" element={<Home />} />

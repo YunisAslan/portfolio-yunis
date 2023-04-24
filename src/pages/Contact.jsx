@@ -1,10 +1,10 @@
 import React, { useRef } from 'react'
 
-import Button from '../components/Button'
 import UseNavigate from '../hooks/UseNavigate'
 
 // EMAILJS
 import emailjs from '@emailjs/browser';
+import Button from '../components/ui/Button';
 
 const Contact = () => {
 
@@ -86,9 +86,13 @@ const Contact = () => {
                         </textarea>
                     </div>
 
-
-                    <Button type="submit" btnText="Submit" className="my-custom-btn submitBtn
-                    button-left left" />
+                    <Button
+                        type="submit"
+                        className="button-left left relative sm:w-[30rem] mm:w-[17rem]"
+                        variant="primary"
+                    >
+                        Submit
+                    </Button>
 
                 </form>
 

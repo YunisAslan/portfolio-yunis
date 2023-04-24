@@ -19,6 +19,9 @@ export default {
         "BgFrom":"#d3cce3",
         "BgTo": "#e9e4f0"
       },
+      boxShadow: {
+        "btnShadow": "0 4px 48px 0 rgb(0 0 0 / 20%)"
+      }
     },
   },
   plugins: [],
