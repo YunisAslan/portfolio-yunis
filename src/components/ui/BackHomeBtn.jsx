@@ -12,7 +12,7 @@ const BackHomeBtn = () => {
         <>
             <Button
                 onClick={() => navigate('/')}
-                className='mm:left-6 md:mx-12 text-[30px] w-[4rem] h-[4rem] lg:mx-[10rem] relative bottom-3'
+                className='mm:left-10 md:left-[70px] lg:left-48 text-[30px] w-14 h-14 relative bottom-3'
                 variant="circle"
             >
                 <BiArrowBack />

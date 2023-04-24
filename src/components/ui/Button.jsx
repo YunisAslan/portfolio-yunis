@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { cva } from "class-variance-authority";
 
 
@@ -13,14 +13,18 @@ const buttonVariants = cva('active:scale-95 inline-flex items-center justify-cen
 })
 
 
-const Button = ({ children, variant, className, ...props }) => {
+const Button = forwardRef(({ children, variant, className, ...props }, ref) => {
     return (
         <>
-            <button className={buttonVariants({ variant, className })} {...props}>
+            <button
+                ref={ref}
+                className={buttonVariants({ variant, className })}
+                {...props}>
+                    
                 {children}
             </button>
         </>
     )
-};
+});
 
 export default Button;

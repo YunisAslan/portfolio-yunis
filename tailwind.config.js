@@ -17,10 +17,11 @@ export default {
         "fromColorTestimonial": "#141E30",
         "toColorTestimonial": "#243B55",
         "BgFrom":"#d3cce3",
-        "BgTo": "#e9e4f0"
+        "BgTo": "#e9e4f0",
+        "taxonomyBlack": "#030711"
       },
       boxShadow: {
-        "btnShadow": "0 4px 48px 0 rgb(0 0 0 / 20%)"
+        "mainShadow": "0 4px 48px 0 rgb(0 0 0 / 20%)"
       }
     },
   },

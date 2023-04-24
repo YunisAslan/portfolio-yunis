@@ -23,10 +23,10 @@ const About = () => {
                 data-aos-duration="700"
             >
                 <img src={ownImg} alt="" className='sm:w-[450px] mm:w-[300px]
-                rounded-[2rem]' />
+                rounded-xl' />
             </div>
 
-            <div className="about-container lg:mx-[20rem] mm:mx-[1rem] dark:text-gray-100"
+            <div className="about-container lg:mx-[20rem] mm:mx-[1rem] dark:text-gray-100 text-justify"
                 data-aos="fade"
                 data-aos-easing="ease-out"
                 data-aos-duration="900"
@@ -44,7 +44,7 @@ const About = () => {
                 <p>Outside of development, I love reading books and listening to different styles of music. I also enjoy spending time with my friends and family.</p>
                 <br />
                 <p>If you want to chat, feel free to
-                    <NavLink to="/contact" className='font-bold underline decoration-slate-900 transition-all hover:bg-slate-400 dark:hover:text-slate-900 rounded-sm p-1'>
+                    <NavLink to="/contact" className='font-bold underline decoration-slate-900 transition-all hover:bg-slate-400 dark:hover:text-slate-900 rounded-sm ml-1 p-1'>
                         reach out.
                     </NavLink>
                 </p>

@@ -1,16 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 // ICONS
 import { HiBars3 } from "react-icons/hi2";
-import { GrHomeRounded } from "react-icons/gr";
-import { RxPerson, RxCross1 } from "react-icons/rx";
-import { CiMail } from "react-icons/ci";
+import { RxCross1 } from "react-icons/rx";
 
 import BrandLogo from './ui/BrandLogo';
 import Button from './ui/Button';
-import { NavLink } from 'react-router-dom';
 import ThemeSwitcher from '../theme/ThemeSwitcher';
-
 import { useTheme } from '../hooks/useTheme';
+
+//navbar
+import { navItems } from './NavItemsData';
+import NavItem from './NavItem';
+
+
 
 const Navbar = () => {
 
@@ -19,46 +21,57 @@ const Navbar = () => {
 
     const { theme } = useTheme()
 
+    const menuRef = useRef(null);
+    const buttonRef = useRef(null);
+
+    useEffect(() => {
+        const handleOutsideClick = (e) => {
+            if (menuRef.current && !menuRef.current.contains(e.target) &&
+                buttonRef.current && !buttonRef.current.contains(e.target)) {
+                setOpen(false);
+            }
+        };
+        document.addEventListener('mousedown', handleOutsideClick);
+        return () => {
+            document.removeEventListener('mousedown', handleOutsideClick);
+        };
+    }, [menuRef, buttonRef]);
+
+    const menuOpenClose = open ? <RxCross1 className='text-2xl' /> : <HiBars3 />
+
     return (
         <>
-            <header className="header flex justify-between items-center h-32 mm:px-5 md:px-12 lg:px-40"
+            <header className="flex justify-between items-center h-32 mm:px-5 md:px-12 lg:px-40"
                 data-aos="fade-down"
                 data-aos-easing="ease-out"
                 data-aos-duration="600"
             >
 
-                {theme === 'dark'
-                    ? <BrandLogo fill={"#fff"} width={100} />
-                    : <BrandLogo fill={"#000"} width={100} />}
+                <div className="header-left">
+                    {theme === 'dark'
+                        ? <BrandLogo fill={"#fff"} width={100} />
+                        : <BrandLogo fill={"#000"} width={100} />
+                    }
+                </div>
 
-
-                <div className="navbar flex items-center">
+                <div className="header-right flex items-center">
 
                     <ThemeSwitcher />
 
-                    <Button onClick={() => setOpen(!open)} className="m-2 btn-btn" variant="circle">
-                        {open ? <RxCross1 className='text-2xl' /> : <HiBars3 className='' />}
+                    <Button ref={buttonRef} onClick={() => setOpen(!open)} className="m-2" variant="circle">
+                        {menuOpenClose}
                     </Button>
 
-                    <div className={`dropdown-menu ${open ? 'active' : 'inactive'} bg-white w-[13rem] h-[10rem] rounded-lg
-                    mm:right-10 md:right-16 lg:right-40 top-28 absolute flex flex-col pl-6 pt-3 font-semibold text-lg z-50`}>
-                        <ul>
-                            <li>
-                                <NavLink to="/" className='nav-link w-[9rem] p-2 flex items-center hover:bg-gray-200 rounded-lg pl-2 text-gray-600 text-[20px]'>
-                                    <GrHomeRounded className='mr-3 flex font-bold text-2xl' /> Home</NavLink>
-                            </li>
-
-                            <li>
-                                <NavLink to="about" className='nav-link w-[9rem] p-2 flex items-center hover:bg-gray-200 rounded-lg pl-2 text-gray-600 text-[20px]'>
-                                    <RxPerson className='mr-3 text-black text-2xl' /> About</NavLink>
-                            </li>
-
-                            <li>
-                                <NavLink to="contact" className='nav-link w-[9rem] p-2 flex items-center hover:bg-gray-200 rounded-lg pl-2 text-gray-600 text-[20px]'>
-                                    <CiMail className='mr-3 text-black text-2xl' /> Contact</NavLink>
-                            </li>
-                        </ul>
-                    </div>
+                    <nav ref={menuRef} className={`menu-container ${open ? 'active' : ''}`}>
+                        {navItems.map((item, index) => (
+                            <NavItem
+                                key={index}
+                                href={item.href}
+                                title={item.title}
+                                icon={item.icon}
+                            />
+                        ))}
+                    </nav>
                 </div>
 
             </header>
