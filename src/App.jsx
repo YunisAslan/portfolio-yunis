@@ -1,6 +1,6 @@
 // MAIN COMPONENTS
 import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
+import Header from "./components/Header";
 
 // ROUTING
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -25,7 +25,7 @@ function App() {
     <>
       <BrowserRouter>
 
-        <Navbar />
+        <Header />
 
         <Routes>
           <Route path="/" element={<Home />} />
