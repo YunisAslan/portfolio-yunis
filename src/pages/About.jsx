@@ -31,7 +31,7 @@ const About = () => {
                 data-aos-easing="ease-out"
                 data-aos-duration="900"
             >
-                <h2 className='text-4xl font-semibold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 pt-12 pb-9 dark:text-white'
+                <h2 className='text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 pt-12 pb-9 dark:text-white'
                     data-aos="fade"
                     data-aos-easing="ease-out"
                     data-aos-duration="600"

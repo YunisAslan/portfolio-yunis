@@ -2,6 +2,7 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
+import GradientIcons from "./components/ui/GradientIcons";
 // ROUTING
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
@@ -13,17 +14,17 @@ import NotFound from "./pages/NotFound";
 // PAGES
 
 // AOS (animation)
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-AOS.init();
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+// AOS.init();
 // AOS (animation)
-
 
 function App() {
   return (
 
     <>
       <BrowserRouter>
+        <GradientIcons />  {/* that's the svg generator.It affect all gradient icons */}
 
         <Header />
 

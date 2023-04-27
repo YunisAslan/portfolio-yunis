@@ -1,17 +1,19 @@
 import React from 'react'
 
-import { FaRegComment } from "react-icons/fa";
-import Testimonial from './Testimonial';
+import { HiOutlineChatBubbleBottomCenter } from "react-icons/hi2";
 
+import Testimonial from './Testimonial';
 import TestimonialInfo from '../data/TestimonialInfo.json';
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-
 import { Autoplay } from "swiper";
+import "swiper/css";
+import { useTheme } from '../hooks/useTheme';
 
 
 const TestimonialContainer = () => {
+
+    const { theme } = useTheme()
 
     return (
         <>
@@ -22,8 +24,13 @@ const TestimonialContainer = () => {
                     data-aos-easing="ease-in-out"
                     data-aos-duration="700"
                 >
-                    <h2 className='text-3xl font-bold  bg-gradient-to-r uppercase dark:text-white text-transparent bg-clip-text tracking-wider'>Testimonials</h2>
-                    <FaRegComment className='ml-3 text-2xl bg-clip-text text-gray-700 dark:text-white' />
+                    <h2 className='text-3xl font-bold bg-gradient-to-r uppercase text-transparent bg-clip-text tracking-wider dark:text-white'>Testimonials</h2>
+
+                    <HiOutlineChatBubbleBottomCenter
+                        className='ml-3 text-2xl dark:text-white'
+                        style={{ stroke: theme === 'dark' ? "url(#dark-gradient)" : "url(#light-gradient)" }}
+                    // come in GradientIcons
+                    />
                 </div>
 
 

@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
 
-      <footer className='footer bg-footer-bg flex flex-col items-center mt-24 h-[13rem] dark:bg-slate-800/30'>
+      <footer className='footer bg-[#fff] flex flex-col items-center mt-24 h-[13rem] dark:bg-blue-300/5'>
 
         <div className="icons flex text-4xl mt-14 space-x-6">
           <a

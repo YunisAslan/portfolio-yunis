@@ -8,20 +8,20 @@ export default {
   theme: {
     extend: {
       screens: {
-        "mm":"324px"
+        "mm": "324px"
       },
       colors: {
-        "textColor": '#323235',
-        "footer-bg": "#F1F1F1",
         "testimonialBg": "rgb(22, 11, 87)",
         "fromColorTestimonial": "#141E30",
         "toColorTestimonial": "#243B55",
-        "BgFrom":"#d3cce3",
-        "BgTo": "#e9e4f0",
-        "taxonomyBlack": "#030711"
+        "taxonomyBlack": "#030711",
+        "lightBorder": "#E2E8F0",
+        "darkBorder":"#1D283A"
       },
       boxShadow: {
-        "mainShadow": "0 4px 48px 0 rgb(0 0 0 / 20%)"
+        "mainShadow": "0 9px 30px 0 rgba(0, 0, 0, 0.1)",
+        "containerShadow": "rgba(0, 0, 0, 0.1) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset",
+        "circleShadow": "0 8px 48px 0 rgba(0, 0, 0, 0.12)"
       }
     },
   },
