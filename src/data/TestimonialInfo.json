@@ -28,23 +28,5 @@
         "testimonial_picture": "https://res.cloudinary.com/drx9zihrg/image/upload/v1676522241/1fef847bb3452006d4ed3289aa8db9c0_xnytno.jpg",
         "testimonial_person": "Lorem Ipsum",
         "testimonial_text": "Dolor sit, amet consectetur adipisicing elit. Incidunt, at!"
-    },
-    {
-        "testimonial_id": 6,
-        "testimonial_picture": "https://res.cloudinary.com/drx9zihrg/image/upload/v1676522241/1fef847bb3452006d4ed3289aa8db9c0_xnytno.jpg",
-        "testimonial_person": "Lorem Ipsum",
-        "testimonial_text": "Dolor sit, amet consectetur adipisicing elit. Incidunt, at!"
-    },
-    {
-        "testimonial_id": 7,
-        "testimonial_picture": "https://res.cloudinary.com/drx9zihrg/image/upload/v1676522241/1fef847bb3452006d4ed3289aa8db9c0_xnytno.jpg",
-        "testimonial_person": "Lorem Ipsum",
-        "testimonial_text": "Dolor sit, amet consectetur adipisicing elit. Incidunt, at!"
-    },
-    {
-        "testimonial_id": 8,
-        "testimonial_picture": "https://res.cloudinary.com/drx9zihrg/image/upload/v1676522241/1fef847bb3452006d4ed3289aa8db9c0_xnytno.jpg",
-        "testimonial_person": "Lorem Ipsum",
-        "testimonial_text": "Dolor sit, amet consectetur adipisicing elit. Incidunt, at!"
-    }
+    } 
 ]

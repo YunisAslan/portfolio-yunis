@@ -3,25 +3,21 @@ import React from 'react'
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { useTheme } from '../hooks/useTheme';
 
+import manOnTheBike from '../assets/images/man-on-a-bicycle.svg'
+
 const Introduction = () => {
 
   const { theme } = useTheme()
 
   return (
     <>
-
       <section className="introduction flex flex-col items-center lg:mt-24 mm:mt-32">
-        <h2 className='mm:text-5xl lg:text-7xl font-bold text-transparent bg-clip-text dark:text-white'
-          data-aos="fade"
-          data-aos-easing="ease-out"
-          data-aos-duration="600">
+
+        <h2 className='mm:text-5xl lg:text-7xl font-bold text-transparent bg-clip-text dark:text-white'>
           Hi, I'm Yunis.
         </h2>
 
-        <span className='flex items-center text-[1.1rem] dark:text-white font-semibold text-transparent bg-clip-text pt-2'
-          data-aos="fade"
-          data-aos-easing="ease-out"
-          data-aos-duration="600">
+        <span className='flex items-center text-[1.1rem] dark:text-white font-semibold text-transparent bg-clip-text pt-2'>
 
           <HiOutlineLocationMarker
             className='mr-1 text-2xl dark:!text-white'

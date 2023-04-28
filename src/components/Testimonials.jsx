@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import "swiper/css";
 import { useTheme } from '../hooks/useTheme';
+import communication from '../assets/images/communication.svg'
 
 
 const TestimonialContainer = () => {
@@ -15,7 +16,7 @@ const TestimonialContainer = () => {
 
     return (
         <>
-            <div className="testimonials-section py-10 px-10">
+            <div className="testimonials-section py-10 px-10 relative">
 
                 <div className="testimonial-head flex flex-col justify-center items-center">
                     <h2 className='mm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r tracking-wider dark:text-white p-1'>
@@ -23,14 +24,16 @@ const TestimonialContainer = () => {
                     </h2>
 
                     <p className='text-transparent bg-clip-text text-lg text-center mt-1 dark:text-white'>
-                        I mainly use these technologies for projects.
+                        What people say ?
                     </p>
                 </div>
 
 
+
                 <Swiper
-                    slidesPerView={3}
+                    slidesPerView={4}
                     spaceBetween={30}
+                    // loop={true}
                     autoplay={{
                         delay: 2500,
                         disableOnInteraction: false,

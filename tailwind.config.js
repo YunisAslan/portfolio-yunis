@@ -11,9 +11,6 @@ export default {
         "mm": "324px"
       },
       colors: {
-        "testimonialBg": "rgb(22, 11, 87)",
-        "fromColorTestimonial": "#141E30",
-        "toColorTestimonial": "#243B55",
         "taxonomyBlack": "#030711",
         "lightBorder": "#E2E8F0",
         "darkBorder":"#1D283A"

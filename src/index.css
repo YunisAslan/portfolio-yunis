@@ -11,7 +11,7 @@
   --primary-black: #000;
   --light-blue: #F8FAFC;
   --light-border:#E2E8F0;
-}
+  }
 
 
 @layer components {
@@ -47,14 +47,7 @@
   }
 
   .testimonial-theme {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: all .8s cubic-bezier(0.215, 0.610, 0.355, 1);
-    cursor: pointer;
-  }
-
-  .testimonial-theme:hover {
-    transform: scale(1.1);
-    transition: all .8s cubic-bezier(0.215, 0.610, 0.355, 1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   }
 
   .form-input {
@@ -94,8 +87,24 @@
     right: 0;
   }
 
-  .swiper-slide {
-    background-color: red !important;
+  .blockquote {
+    position: relative;
+    font-weight: 500;
+    padding: 30px 0;
+    width: 100%;
+    max-width: 500px;
+    z-index: 1;
+    align-self: center;
   }
+
+  .blockquote:after {
+    position: absolute;
+    content: "”";
+    /* color: var(--main-linear); */
+    font-size: 7rem;
+    line-height: 0;
+    bottom: 4px;
+    right: 1rem;
+}
 }
 
