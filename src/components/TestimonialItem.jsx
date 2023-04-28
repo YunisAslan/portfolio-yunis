@@ -3,11 +3,7 @@ import React from 'react'
 const Testimonial = ({ testimonialPerson, testimonialText,testimonialPicture }) => {
     return (
         <>
-            <div className="testimonial flex justify-center py-5"
-                data-aos="zoom-in"
-                data-aos-easing="ease-in-out"
-                data-aos-duration="600"
-            >
+            <div className="testimonial flex justify-center py-5">
                 <div className="testimonial-theme w-[17.7rem] h-[20rem] rounded-[2.75rem] bg-gray-100
                 dark:bg-gradient-to-r dark:from-fromColorTestimonial dark:to-toColorTestimonial px-1">
 

@@ -1,8 +1,6 @@
 import React from 'react'
 
-import { HiOutlineChatBubbleBottomCenter } from "react-icons/hi2";
-
-import Testimonial from './Testimonial';
+import TestimonialItem from './TestimonialItem';
 import TestimonialInfo from '../data/TestimonialInfo.json';
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -17,20 +15,16 @@ const TestimonialContainer = () => {
 
     return (
         <>
-            <div className="testimonial-container mt-16 mb-16 mx-5">
+            <div className="testimonials-section py-10 px-10">
 
-                <div className="testimonial-head flex justify-center"
-                    data-aos="zoom-in"
-                    data-aos-easing="ease-in-out"
-                    data-aos-duration="700"
-                >
-                    <h2 className='text-3xl font-bold bg-gradient-to-r uppercase text-transparent bg-clip-text tracking-wider dark:text-white'>Testimonials</h2>
+                <div className="testimonial-head flex flex-col justify-center items-center">
+                    <h2 className='mm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r tracking-wider dark:text-white p-1'>
+                        Testimonials
+                    </h2>
 
-                    <HiOutlineChatBubbleBottomCenter
-                        className='ml-3 text-2xl dark:text-white'
-                        style={{ stroke: theme === 'dark' ? "url(#dark-gradient)" : "url(#light-gradient)" }}
-                    // come in GradientIcons
-                    />
+                    <p className='text-transparent bg-clip-text text-lg text-center mt-1 dark:text-white'>
+                        I mainly use these technologies for projects.
+                    </p>
                 </div>
 
 
@@ -66,7 +60,7 @@ const TestimonialContainer = () => {
                     <div>
                         {
                             TestimonialInfo.map((OneInfo) => (
-                                <SwiperSlide key={OneInfo.testimonial_id}><Testimonial testimonialImg={OneInfo.testimonial_id} testimonialPerson={OneInfo.testimonial_person} testimonialText={OneInfo.testimonial_text} testimonialPicture={OneInfo.testimonial_picture} /></SwiperSlide>
+                                <SwiperSlide key={OneInfo.testimonial_id}><TestimonialItem testimonialImg={OneInfo.testimonial_id} testimonialPerson={OneInfo.testimonial_person} testimonialText={OneInfo.testimonial_text} testimonialPicture={OneInfo.testimonial_picture} /></SwiperSlide>
                             ))
                         }
                     </div>

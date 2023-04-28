@@ -30,11 +30,8 @@ const Introduction = () => {
           />
           Baku
         </span>
-        <p className='text-transparent bg-clip-text text-lg text-center mt-3 px-6 dark:text-white'
-          data-aos="fade"
-          data-aos-easing="ease-out"
-          data-aos-duration="600">
-          Currently, I'm engaged in the development of the frontend <br /> of websites using modern technologies.
+        <p className='text-transparent bg-clip-text text-lg text-center mt-3 mm:px-12 md:px-6 dark:text-white max-w-xl'>
+          Currently, I'm engaged in the development of the frontend of websites using modern technologies.
         </p>
 
       </section>

@@ -41,7 +41,8 @@
   .introduction :is(h2, span, p),
   .testimonial-head h2,
   .skills-section :is(h2,p),
-  .projects h2 {
+  .projects-head :is(h2,p),
+  .testimonial-head :is(h2,p) {
     background-image: var(--main-linear);
   }
 

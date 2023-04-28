@@ -1,7 +1,7 @@
 import React from 'react'
 import Introduction from '../components/Introduction'
 import Skills from '../components/Skills'
-import TestimonialContainer from '../components/TestimonialContainer'
+import Testimonials from '../components/Testimonials'
 import Projects from '../components/Projects'
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
 
             <Skills />
             <Projects />
-            {/* <TestimonialContainer /> */}
+            <Testimonials />
         </>
     )
 }

@@ -10,7 +10,7 @@ const Skills = () => {
             <section className="skills-section mt-72 px-20 py-20 bg-[#FFF] dark:bg-blue-300/5">
 
                 <div className="skills-head flex flex-col justify-center items-center">
-                    <h2 className='mm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r tracking-wider dark:text-white'>
+                    <h2 className='mm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r tracking-wider dark:text-white p-1'>
                         Skills
                     </h2>
 
