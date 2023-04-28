@@ -23,8 +23,8 @@ const ProjectItem = ({ ...item }) => {
                     </div>
 
 
-                    <div className="project-right mm:col-span-12 lg:col-span-6">
-                        <img src={item.project_img} alt="" />
+                    <div className="project-right mm:col-span-12 lg:col-span-6 overflow-hidden rounded-md">
+                        <img src={item.project_img} alt="" className="group-hover:scale-105 duration-500 transition-all"/>
                     </div>
                 </div>
             </div>

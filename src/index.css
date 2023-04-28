@@ -20,11 +20,11 @@
   }
 
   .menu-container {
-    @apply bg-white w-52 h-40 rounded-lg mm:right-10 md:right-16 lg:right-40 top-28 absolute flex flex-col pl-6 pt-3 font-semibold text-lg shadow-mainShadow opacity-0 z-50 transition-all duration-500
+    @apply bg-white w-52 h-40 rounded-lg mm:right-10 md:right-16 lg:right-40 top-28 absolute flex flex-col pl-6 pt-3 font-semibold text-lg shadow-mainShadow z-50 transition-all duration-500  opacity-0 invisible
   }
 
   .menu-container.active {
-    @apply opacity-100 transition-all duration-500
+    @apply opacity-100 visible transition-all duration-500
   }
 
 }
@@ -44,10 +44,6 @@
   .projects-head :is(h2,p),
   .testimonial-head :is(h2,p) {
     background-image: var(--main-linear);
-  }
-
-  .testimonial-theme {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   }
 
   .form-input {
@@ -87,24 +83,9 @@
     right: 0;
   }
 
-  .blockquote {
-    position: relative;
-    font-weight: 500;
-    padding: 30px 0;
-    width: 100%;
-    max-width: 500px;
-    z-index: 1;
-    align-self: center;
-  }
-
-  .blockquote:after {
-    position: absolute;
-    content: "”";
-    /* color: var(--main-linear); */
-    font-size: 7rem;
-    line-height: 0;
-    bottom: 4px;
-    right: 1rem;
-}
+  /* .testimonial:hover img {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+  } */
 }
 

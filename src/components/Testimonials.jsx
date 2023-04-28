@@ -6,13 +6,8 @@ import TestimonialInfo from '../data/TestimonialInfo.json';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import "swiper/css";
-import { useTheme } from '../hooks/useTheme';
-import communication from '../assets/images/communication.svg'
-
 
 const TestimonialContainer = () => {
-
-    const { theme } = useTheme()
 
     return (
         <>
@@ -22,20 +17,17 @@ const TestimonialContainer = () => {
                     <h2 className='mm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r tracking-wider dark:text-white p-1'>
                         Testimonials
                     </h2>
-
+{/* 
                     <p className='text-transparent bg-clip-text text-lg text-center mt-1 dark:text-white'>
                         What people say ?
-                    </p>
+                    </p> */}
                 </div>
-
-
 
                 <Swiper
                     slidesPerView={4}
                     spaceBetween={30}
-                    // loop={true}
                     autoplay={{
-                        delay: 2500,
+                        delay: 3000,
                         disableOnInteraction: false,
                     }}
                     modules={[Autoplay]}
@@ -61,11 +53,11 @@ const TestimonialContainer = () => {
                 >
 
                     <div>
-                        {
-                            TestimonialInfo.map((OneInfo) => (
-                                <SwiperSlide key={OneInfo.testimonial_id}><TestimonialItem testimonialImg={OneInfo.testimonial_id} testimonialPerson={OneInfo.testimonial_person} testimonialText={OneInfo.testimonial_text} testimonialPicture={OneInfo.testimonial_picture} /></SwiperSlide>
-                            ))
-                        }
+                        {TestimonialInfo.map((oneInfo) => (
+                            <SwiperSlide key={oneInfo.id}>
+                                <TestimonialItem {...oneInfo} />
+                            </SwiperSlide>
+                        ))}
                     </div>
 
                 </Swiper>

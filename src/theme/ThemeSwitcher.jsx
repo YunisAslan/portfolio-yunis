@@ -25,8 +25,8 @@ const ThemeSwitcher = () => {
         <>
             <Button onClick={handleTheme} variant="ghost">
                 {theme === "dark"
-                    ? <BsMoon className="" />
-                    : <BsSun className=""/>}
+                    ? <BsMoon />
+                    : <BsSun />}
             </Button>
         </>
     )
