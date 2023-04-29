@@ -6,7 +6,7 @@ const buttonVariants = cva('active:scale-95 inline-flex items-center justify-cen
     variants: {
         variant: {
             primary: 'bg-[#fff] border border-lightBorder font-semibold rounded-sm px-4 py-3 text-black hover:text-white',
-            circle: 'bg-white text-4xl rounded-full w-14 h-14 shadow-circleShadow',
+            circle: 'bg-white text-3xl rounded-full w-14 h-14 shadow-circleShadow',
             ghost: 'mr-2 text-2xl text-black dark:text-white'
         }
     }

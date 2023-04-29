@@ -11,12 +11,7 @@ const Header = () => {
 
     return (
         <>
-            <header className="flex justify-between items-center h-32 mm:px-5 md:px-12 lg:px-40"
-                data-aos="fade-down"
-                data-aos-easing="ease-out"
-                data-aos-duration="600"
-            >
-
+            <header className="flex justify-between items-center h-32 mm:px-5 md:px-12 lg:px-40">
                 <div className="header-left">
                     {theme === 'dark'
                         ? <BrandLogo fill={"#fff"} width={100} />
@@ -28,7 +23,6 @@ const Header = () => {
                     <ThemeSwitcher />
                     <Navbar />
                 </div>
-
             </header>
         </>
     )

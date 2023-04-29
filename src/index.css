@@ -11,6 +11,7 @@
   --primary-black: #000;
   --light-blue: #F8FAFC;
   --light-border:#E2E8F0;
+  --taxonomy-black: #030711;
   }
 
 
@@ -42,7 +43,8 @@
   .testimonial-head h2,
   .skills-section :is(h2,p),
   .projects-head :is(h2,p),
-  .testimonial-head :is(h2,p) {
+  .testimonial-head :is(h2,p),
+  .about-container h2 {
     background-image: var(--main-linear);
   }
 
@@ -83,9 +85,6 @@
     right: 0;
   }
 
-  /* .testimonial:hover img {
-    transform: scale(1.2);
-    transition: transform 0.3s ease-in-out;
-  } */
+/*  */
 }
 

@@ -1,11 +1,13 @@
 import React from 'react'
 
-const SkillBox = ({ mySkill }) => {
+const SkillBox = ({ icon }) => {
+
     return (
         <>
-            <div className='skill-container border border-lightBorder flex justify-center bg-white rounded-md p-5 dark:border-darkBorder'>
-                <div className='skill-logo w-20 h-24 flex justify-center'>
-                    <img src={mySkill} alt=""/>
+            <div
+                className='skill-container border border-lightBorder flex justify-center rounded-md p-5 dark:border-darkBorder'>
+                <div className='skill-logo flex justify-center w-20 h-24'>
+                   {icon}
                 </div>
             </div>
         </>

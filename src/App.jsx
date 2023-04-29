@@ -18,7 +18,6 @@ import NotFound from "./pages/NotFound";
 // import 'aos/dist/aos.css';
 // AOS.init();
 // AOS (animation)
-
 function App() {
   return (
 

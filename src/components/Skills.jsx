@@ -21,7 +21,7 @@ const Skills = () => {
            
                 <div className="skill-boxes grid mm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-8 mm:px-8 lg:px-16">
                     {skillItems.map((item, index) => (
-                        <SkillBox key={index} mySkill={item.icon} />
+                        <SkillBox key={index} icon={item.icon} />
                     ))}
                 </div>
 

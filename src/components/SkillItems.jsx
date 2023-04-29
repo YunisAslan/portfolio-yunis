@@ -1,28 +1,29 @@
+import React from 'react'
 
-import htmlSvg from '../assets/images/skills/html.svg'
-import cssSvg from '../assets/images/skills/css.svg'
-import tailwindSvg from '../assets/images/skills/tailwind.svg'
-import jsSvg from '../assets/images/skills/javascript.svg'
-import reactSvg from '../assets/images/skills/react.svg'
-import reduxSvg from '../assets/images/skills/redux.svg'
+import { ReactComponent as HtmlSvg } from '../assets/images/skills/html.svg'
+import { ReactComponent as CssSvg } from '../assets/images/skills/css.svg'
+import { ReactComponent as TailwindSvg } from '../assets/images/skills/tailwind.svg'
+import { ReactComponent as JsSvg } from '../assets/images/skills/javascript.svg'
+import { ReactComponent as ReactSvg } from '../assets/images/skills/react.svg'
+import { ReactComponent as ReduxSvg } from '../assets/images/skills/redux.svg'
 
 export const skillItems = [
     {
-        icon: htmlSvg
+        icon: <HtmlSvg className="fill-taxonomyBlack dark:fill-white" />
     },
     {
-        icon: cssSvg
+        icon: <CssSvg className="fill-taxonomyBlack dark:fill-white" />
     },
     {
-        icon: tailwindSvg
+        icon: <TailwindSvg className="fill-taxonomyBlack dark:fill-white" />
     },
     {
-        icon: jsSvg
+        icon: <JsSvg className="fill-taxonomyBlack dark:fill-white" />
     },
     {
-        icon: reactSvg
+        icon: <ReactSvg className="fill-taxonomyBlack dark:fill-white" />
     },
     {
-        icon: reduxSvg
+        icon: <ReduxSvg className="fill-taxonomyBlack dark:fill-white" />
     }
 ]
