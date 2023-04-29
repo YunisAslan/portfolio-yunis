@@ -1,54 +1,66 @@
-import React from 'react'
+import React from "react";
 
-import { AiOutlineTwitter, AiOutlineFacebook, AiFillLinkedin, AiOutlineInstagram, AiOutlineGithub } from "react-icons/ai";
+import {
+  AiOutlineTwitter,
+  AiOutlineFacebook,
+  AiFillLinkedin,
+  AiOutlineInstagram,
+  AiOutlineGithub,
+} from "react-icons/ai";
 
 const Footer = () => {
   return (
     <>
-
-      <footer className='footer bg-[#fff] flex flex-col items-center mt-32 h-52 dark:bg-blue-300/5'>
-
-        <div className="icons flex text-4xl mt-14 space-x-6">
+      <footer className="footer mt-32 flex h-52 flex-col items-center bg-[#fff] dark:bg-blue-300/5">
+        <div className="icons mt-14 flex space-x-6 text-4xl">
           <a
-            rel='noreferrer'
+            rel="noreferrer"
             href="https://twitter.com/Nekrolog_nekro"
             target="_blank"
-            className='flex items-center justify-center w-10 h-10 rounded-lg hover:scale-105 hover:-translate-y-2 transition-all duration-700 text-taxonomyBlack hover:text-white hover:bg-taxonomyBlack  dark:text-white dark:hover:bg-white dark:hover:text-taxonomyBlack'>
+            className="flex h-10 w-10 items-center justify-center rounded-lg text-taxonomyBlack transition-all duration-700 hover:-translate-y-2 hover:scale-105 hover:bg-taxonomyBlack hover:text-white  dark:text-white dark:hover:bg-white dark:hover:text-taxonomyBlack"
+          >
             <AiOutlineTwitter />
           </a>
           <a
-            rel='noreferrer'
+            rel="noreferrer"
             href="https://www.facebook.com/yunis.aslanov.9"
             target="_blank"
-            className='flex items-center justify-center w-10 h-10 rounded-lg hover:scale-105 hover:-translate-y-2 transition-all duration-700 text-taxonomyBlack hover:text-white hover:bg-taxonomyBlack  dark:text-white dark:hover:bg-white dark:hover:text-taxonomyBlack'>
+            className="flex h-10 w-10 items-center justify-center rounded-lg text-taxonomyBlack transition-all duration-700 hover:-translate-y-2 hover:scale-105 hover:bg-taxonomyBlack hover:text-white  dark:text-white dark:hover:bg-white dark:hover:text-taxonomyBlack"
+          >
             <AiOutlineFacebook />
           </a>
           <a
-            rel='noreferrer'
+            rel="noreferrer"
             href="https://www.linkedin.com/in/yunis-aslanov"
             target="_blank"
-            className='flex items-center justify-center w-10 h-10 rounded-lg hover:scale-105 hover:-translate-y-2 transition-all duration-700 text-taxonomyBlack hover:text-white hover:bg-taxonomyBlack  dark:text-white dark:hover:bg-white dark:hover:text-taxonomyBlack'>
+            className="flex h-10 w-10 items-center justify-center rounded-lg text-taxonomyBlack transition-all duration-700 hover:-translate-y-2 hover:scale-105 hover:bg-taxonomyBlack hover:text-white  dark:text-white dark:hover:bg-white dark:hover:text-taxonomyBlack"
+          >
             <AiFillLinkedin />
           </a>
           <a
-            rel='noreferrer'
+            rel="noreferrer"
             href="https://www.instagram.com/llll.yunis.llll"
             target="_blank"
-            className='flex items-center justify-center w-10 h-10 rounded-lg hover:scale-105 hover:-translate-y-2 transition-all duration-700 text-taxonomyBlack hover:text-white hover:bg-taxonomyBlack  dark:text-white dark:hover:bg-white dark:hover:text-taxonomyBlack'><AiOutlineInstagram /></a>
+            className="flex h-10 w-10 items-center justify-center rounded-lg text-taxonomyBlack transition-all duration-700 hover:-translate-y-2 hover:scale-105 hover:bg-taxonomyBlack hover:text-white  dark:text-white dark:hover:bg-white dark:hover:text-taxonomyBlack"
+          >
+            <AiOutlineInstagram />
+          </a>
           <a
-            rel='noreferrer'
+            rel="noreferrer"
             href="https://github.com/YunisAslan"
             target="_blank"
-            className='flex items-center justify-center w-10 h-10 rounded-lg hover:scale-105 hover:-translate-y-2 transition-all duration-700 text-taxonomyBlack hover:text-white hover:bg-taxonomyBlack  dark:text-white dark:hover:bg-white dark:hover:text-taxonomyBlack'><AiOutlineGithub /></a>
+            className="flex h-10 w-10 items-center justify-center rounded-lg text-taxonomyBlack transition-all duration-700 hover:-translate-y-2 hover:scale-105 hover:bg-taxonomyBlack hover:text-white  dark:text-white dark:hover:bg-white dark:hover:text-taxonomyBlack"
+          >
+            <AiOutlineGithub />
+          </a>
         </div>
 
-        <span className='mm:text-xs sm:text-sm flex items-center mt-10 text-gray-600 dark:text-white'>
+        <span className="mt-10 flex items-center text-gray-600 dark:text-white mm:text-xs sm:text-sm">
           Copyright &copy; 2023 Yunis Aslanov. All rights reserved.
         </span>
       </footer>
     </>
+  );
+};
 
-  )
-}
-
-export default Footer
+export default Footer;

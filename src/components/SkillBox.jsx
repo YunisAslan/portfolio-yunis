@@ -1,17 +1,13 @@
-import React from 'react'
+import React from "react";
 
 const SkillBox = ({ icon }) => {
+  return (
+    <>
+      <div className="skill-container flex justify-center rounded-md border border-lightBorder p-5 dark:border-darkBorder">
+        <div className="skill-logo flex h-24 w-20 justify-center">{icon}</div>
+      </div>
+    </>
+  );
+};
 
-    return (
-        <>
-            <div
-                className='skill-container border border-lightBorder flex justify-center rounded-md p-5 dark:border-darkBorder'>
-                <div className='skill-logo flex justify-center w-20 h-24'>
-                   {icon}
-                </div>
-            </div>
-        </>
-    )
-}
-
-export default SkillBox
+export default SkillBox;

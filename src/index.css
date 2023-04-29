@@ -1,91 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   --main-linear: linear-gradient(141deg, #969699, #1e1e22);
   --primary-white: #fff;
+  --light-blue: #f8fafc;
   --primary-black: #000;
-  --light-blue: #F8FAFC;
-  --light-border:#E2E8F0;
   --taxonomy-black: #030711;
-  }
-
+  --light-border: #e2e8f0;
+  --dark-border: #1d283a;
+}
 
 @layer components {
   body {
-    @apply dark:bg-taxonomyBlack bg-[#f3f5f6]
+    @apply bg-[#f3f5f6] dark:bg-taxonomyBlack;
   }
 
   .menu-container {
-    @apply bg-white w-52 h-40 rounded-lg mm:right-10 md:right-16 lg:right-40 top-28 absolute flex flex-col pl-6 pt-3 font-semibold text-lg shadow-mainShadow z-50 transition-all duration-500  opacity-0 invisible
+    @apply invisible absolute top-28 z-50 flex h-40 w-52 flex-col rounded-lg bg-white pl-6 pt-3 text-lg font-semibold opacity-0 shadow-menuShadow transition-all duration-500 mm:right-10  md:right-16 lg:right-40;
   }
 
   .menu-container.active {
-    @apply opacity-100 visible transition-all duration-500
+    @apply visible opacity-100 transition-all duration-500;
   }
-
 }
 
 @layer base {
   body {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
   }
 
   .nav-link.active > span {
     color: #000;
   }
 
-  .introduction :is(h2, span, p),
-  .testimonial-head h2,
-  .skills-section :is(h2,p),
-  .projects-head :is(h2,p),
-  .testimonial-head :is(h2,p),
-  .about-container h2,
-  .contact h2 {
-    background-image: var(--main-linear);
-  }
+  /*  */
 
-  .form-input {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.04);
-  }
-
-  /* BUTTON FILL LEFT ANIMATION */
-
-  .button-left {
-    background-color: #0A111D;
-    display: inline-block;
-    padding: 15px 45px 15px 40px;
-    position: relative;
-    text-decoration: none;
-    transition: all .6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    z-index: 1;
-  }
-
-  .button-left::after,
-  .button-left::before {
-    background-color: #0A111D;
-    transition: all .6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    border-radius: 2px;
-    content: '';
-    position: absolute;
-    z-index: -1;
-  }
-
-  .left:before {
-    top: 0;
-    right: 100%;
-    bottom: 0;
-    left: 0;
-  }
-
-  .left:hover::before {
-    right: 0;
-  }
-
-/*  */
+  /*  */
 }
-

@@ -3,23 +3,18 @@ import { createContext, useState } from "react";
 export const Context = createContext();
 
 function ThemeContext({ children }) {
+  const [theme, setTheme] = useState(localStorage.getItem("theme"));
 
-    const [theme, setTheme] = useState(
-        localStorage.getItem("theme")
-    )
+  const contextData = {
+    theme,
+    setTheme,
+  };
 
-    const contextData = {
-        theme,
-        setTheme
-    }
-
-    return (
-        <>
-            <Context.Provider value={contextData}>
-                {children}
-            </Context.Provider>
-        </>
-    )
+  return (
+    <>
+      <Context.Provider value={contextData}>{children}</Context.Provider>
+    </>
+  );
 }
 
 export default ThemeContext;

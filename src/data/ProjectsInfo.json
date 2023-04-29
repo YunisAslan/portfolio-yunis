@@ -1,16 +1,16 @@
 [
-    {
-        "id": 1,
-        "project_address": "https://edumy-course.vercel.app",
-        "project_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1682620542/Portfolio/Screenshot_159_k2wjxn.png",
-        "project_title": "Edumy Online-Course",
-        "project_detail": "Yunis Bəy, sizə gələcək işlərinizdə uğurlar.Sizinlə birgə işləmək arzusu ilə.Bacarıqlarınız və özünüz ciddən çox gözəldir."
-    },
-    {
-        "id": 2,
-        "project_address": "x",
-        "project_img": "",
-        "project_title": "Soon",
-        "project_detail": "As soon as"
-    }
+  {
+    "id": 1,
+    "project_address": "https://edumy-course.vercel.app",
+    "project_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1682620542/Portfolio/Screenshot_159_k2wjxn.png",
+    "project_title": "Edumy Online-Course",
+    "project_detail": "Yunis Bəy, sizə gələcək işlərinizdə uğurlar.Sizinlə birgə işləmək arzusu ilə.Bacarıqlarınız və özünüz ciddən çox gözəldir."
+  },
+  {
+    "id": 2,
+    "project_address": "x",
+    "project_img": "",
+    "project_title": "Soon",
+    "project_detail": "As soon as"
+  }
 ]
