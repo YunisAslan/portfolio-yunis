@@ -14,13 +14,9 @@ const TestimonialContainer = () => {
             <div className="testimonials-section py-10 px-10 relative">
 
                 <div className="testimonial-head flex flex-col justify-center items-center">
-                    <h2 className='mm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r tracking-wider dark:text-white p-1'>
+                    <h2 className='mm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r dark:text-white p-1'>
                         Testimonials
                     </h2>
-{/* 
-                    <p className='text-transparent bg-clip-text text-lg text-center mt-1 dark:text-white'>
-                        What people say ?
-                    </p> */}
                 </div>
 
                 <Swiper

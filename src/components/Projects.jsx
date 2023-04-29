@@ -10,7 +10,7 @@ const Projects = () => {
             <section className="projects-section py-20 px-10">
 
                 <div className="projects-head flex flex-col justify-center items-center">
-                    <h2 className="mm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r tracking-wider dark:text-white p-1">
+                    <h2 className="mm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r dark:text-white p-1">
                         Projects
                     </h2>
 

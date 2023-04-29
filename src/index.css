@@ -44,12 +44,13 @@
   .skills-section :is(h2,p),
   .projects-head :is(h2,p),
   .testimonial-head :is(h2,p),
-  .about-container h2 {
+  .about-container h2,
+  .contact h2 {
     background-image: var(--main-linear);
   }
 
   .form-input {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.04);
   }
 
   /* BUTTON FILL LEFT ANIMATION */

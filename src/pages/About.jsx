@@ -27,7 +27,7 @@ const About = () => {
                 </div>
 
                 <div className="about-container lg:px-[20rem] mm:px-7 dark:text-gray-100 mm:text-center sm:text-justify">
-                    <h2 className='text-4xl font-semibold text-transparent bg-clip-text pt-12 pb-9 dark:text-white'>
+                    <h2 className='text-4xl font-semibold text-transparent bg-clip-text py-8 dark:text-white'>
                         Hi again, I'm Yunis.
                     </h2>
 
