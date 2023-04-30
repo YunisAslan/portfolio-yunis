@@ -21,7 +21,7 @@ const About = () => {
 
       <section className="about-section flex flex-col items-center justify-center">
         <div className="own-picture flex justify-center mm:w-[300px] sm:w-[450px]">
-          <img src={OwnImg} alt="" className="rounded-xl" loading="lazy" />
+          <img src={OwnImg} alt="" className="rounded-xl" />
         </div>
 
         <div className="about-container dark:text-gray-100 mm:px-7 mm:text-center sm:text-justify lg:px-[20rem]">

@@ -1,16 +1,16 @@
 import React from "react";
 
-import BrandLogo from "./ui/BrandLogo";
+import BrandLogo from "../components/ui/BrandLogo";
 import ThemeSwitcher from "../theme/ThemeSwitcher";
 import { useTheme } from "../hooks/useTheme";
-import Navbar from "./Navbar";
+import Navbar from "../components/Navbar";
 
 const Header = () => {
   const { theme } = useTheme();
 
   return (
     <>
-      <header className="bg-red-400 flex h-32 items-center justify-between mm:px-5 md:px-12 lg:px-40">
+      <header className="flex h-32 items-center justify-between mm:px-5 md:px-12 lg:px-40">
         <div className="header-left">
           {theme === "dark" ? (
             <BrandLogo fill={"#fff"} width={100} />

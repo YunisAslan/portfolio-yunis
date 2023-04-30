@@ -6,7 +6,7 @@ const NavItem = ({ href, icon, title }) => {
     <>
       <NavLink
         to={`${href}`}
-        className="nav-link flex w-[9rem] items-center rounded-lg p-2 pl-2 text-[20px] hover:bg-gray-200"
+        className="nav-link flex mr-3 items-center rounded-lg p-2 text-[20px] hover:bg-gray-200"
       >
         {icon}
         <span className="text-gray-600">{title}</span>

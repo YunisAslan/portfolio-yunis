@@ -20,11 +20,11 @@
   }
 
   .menu-container {
-    @apply invisible absolute top-28 z-50 flex h-40 w-52 flex-col rounded-lg bg-white pl-6 pt-3 text-lg font-semibold opacity-0 shadow-menuShadow transition-all duration-500 mm:right-10  md:right-16 lg:right-40;
+    @apply clip-bar1 invisible absolute top-28 z-50 flex h-[150px] w-60 flex-col justify-center rounded-xl bg-white pl-4 text-lg font-semibold opacity-0 shadow-menuShadow transition-all duration-500 mm:right-10 md:right-16 lg:right-44;
   }
 
   .menu-container.active {
-    @apply visible opacity-100 transition-all duration-500;
+    @apply clip-bar2 visible opacity-100 transition-all duration-500;
   }
 }
 
@@ -40,4 +40,14 @@
   /*  */
 
   /*  */
+}
+
+@layer utilities {
+  /* menu bar clips.. */
+  .clip-bar1 {
+    clip-path: circle(0% at 100% 120%);
+  }
+  .clip-bar2 {
+    clip-path: circle(150% at 100% 100%);
+  }
 }

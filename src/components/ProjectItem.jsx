@@ -31,7 +31,7 @@ const ProjectItem = ({ ...item }) => {
             <img
               src={item.project_img}
               alt=""
-              className="transition-all duration-500 group-hover:scale-105"
+              className="transition-all duration-[.8s] group-hover:scale-110 object-cover"
             />
           </div>
         </div>

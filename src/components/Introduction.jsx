@@ -9,6 +9,9 @@ const Introduction = () => {
   return (
     <>
       <section className="introduction flex flex-col items-center mm:mt-32 lg:mt-24">
+
+        {/* <img src={cool} alt=""  className="absolute inset-0 h-full w-full -z-10"/> */}
+
         <h2 className="bg-gradient-main bg-clip-text font-bold text-transparent dark:text-white mm:text-5xl lg:text-7xl">
           Hi, I'm Yunis.
         </h2>

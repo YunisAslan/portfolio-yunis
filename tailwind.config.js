@@ -22,7 +22,7 @@ export default {
         formShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.04)",
       },
       transitionTimingFunction: {
-        expo: "cubic-bezier(0.455, 0.03, 0.515, 0.955)",
+        btnCubic: "cubic-bezier(0.455, 0.03, 0.515, 0.955)",
       },
     },
   },
