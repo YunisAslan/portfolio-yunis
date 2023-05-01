@@ -5,9 +5,11 @@ import "./index.css";
 
 import ThemeProvider from "./context/ThemeContext";
 
+import "./i18n";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <ThemeProvider>
-    <App />
+      <App />
   </ThemeProvider>
 );

@@ -34,11 +34,10 @@
   }
 
   .nav-link.active > span {
-    color: #000;
+    color: var(--taxonomy-black);
   }
 
   /*  */
-
   /*  */
 }
 
