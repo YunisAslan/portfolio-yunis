@@ -20,7 +20,7 @@
   }
 
   .menu-container {
-    @apply clip-bar1 invisible absolute top-28 z-50 flex h-[150px] w-60 flex-col justify-center rounded-xl bg-white pl-4 text-lg font-semibold opacity-0 shadow-menuShadow transition-all duration-500 mm:right-10 md:right-16 lg:right-44;
+    @apply clip-bar1 invisible absolute top-28 z-50 flex h-[150px] w-64 flex-col justify-center rounded-xl bg-white pl-4 text-lg font-semibold opacity-0 shadow-menuShadow transition-all duration-500 mm:right-10 md:right-16 lg:right-44;
   }
 
   .menu-container.active {
@@ -37,7 +37,28 @@
     color: var(--taxonomy-black);
   }
 
-  /*  */
+  /* for loading animation */
+  @keyframes moveUpDown {
+    0% {
+      /* transform: translateY(0); */
+      opacity: 0;
+    }
+    50% {
+      /* transform: translateY(-8px); */
+      opacity: 1;
+    }
+    100% {
+      /* transform: translateY(0); */
+      opacity: 0;
+    }
+  }
+
+  .loader svg {
+    position: relative;
+    animation: moveUpDown 1.3s ease-in-out infinite;
+  }
+
+  
   /*  */
 }
 

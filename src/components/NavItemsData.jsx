@@ -18,5 +18,5 @@ export const navItems = [
     title: "Contact",
     href: "/contact",
     icon: <CiMail className="mr-3 stroke-[.3] text-2xl" />,
-  },
+  }
 ];
