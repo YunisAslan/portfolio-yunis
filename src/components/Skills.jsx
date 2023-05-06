@@ -8,7 +8,9 @@ const Skills = () => {
     <>
       <section className="skills-section mt-72 bg-[#FFF] px-20 py-20 dark:bg-blue-300/5">
         <div className="skills-head flex flex-col items-center justify-center">
-          <h2 className="bg-gradient-main bg-clip-text p-1 font-bold text-transparent dark:text-white mm:text-4xl md:text-5xl">
+          <h2
+            className="bg-gradient-main bg-clip-text p-1 font-bold text-transparent dark:text-white mm:text-4xl md:text-5xl"
+          >
             Skills
           </h2>
 

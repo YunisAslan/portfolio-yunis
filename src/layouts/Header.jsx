@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex h-32 items-center justify-between mm:px-5 md:px-12 lg:px-40">
+      <header className="flex h-32 items-center justify-between mm:px-5 md:px-12 lg:px-32">
         <div className="header-left flex items-center">
           {theme === "dark" ? (
             <BrandLogo fill={"#fff"} width={100} />

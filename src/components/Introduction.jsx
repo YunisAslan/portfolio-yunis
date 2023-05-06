@@ -1,18 +1,38 @@
-import React from "react";
+import React, {useRef, useEffect} from "react";
 
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { useTheme } from "../hooks/useTheme";
 import { useTranslation } from "react-i18next";
 
+import { gsap } from "gsap";
+import SplitType from "split-type";
+
 const Introduction = () => {
+  const { t } = useTranslation();
   const { theme } = useTheme();
 
-  const { t } = useTranslation();
+   const splitTextRef = useRef(null);
+
+   useEffect(() => {
+     const splitText = new SplitType(splitTextRef.current);
+
+     gsap.to(".char", {
+       y: 0,
+       stagger: 0.05,
+       delay: 0.2,
+       duration: 0.1,
+     });
+     
+   }, []);
 
   return (
     <>
       <section className="introduction flex flex-col items-center mm:mt-32 lg:mt-24">
-        <h2 className="bg-gradient-main bg-clip-text font-bold text-transparent dark:text-white mm:text-5xl lg:text-7xl">
+        <h2
+          ref={splitTextRef}
+          id="split-text"
+          className="clip-split bg-gradient-main bg-clip-text font-bold text-transparent dark:text-white mm:text-5xl lg:text-7xl"
+        >
           {t("introduction.title")}
         </h2>
 
@@ -30,8 +50,7 @@ const Introduction = () => {
           {t("introduction.location")}
         </span>
         <p className="mt-3 max-w-xl bg-gradient-main bg-clip-text text-center text-lg text-transparent dark:text-white mm:px-12 md:px-6">
-          Currently, I'm engaged in the development of the frontend of websites
-          using modern technologies.
+          {t("introduction.detail")}
         </p>
       </section>
     </>

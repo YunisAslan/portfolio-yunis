@@ -3,8 +3,8 @@ import { initReactI18next } from "react-i18next";
 
 import en from "./locales/en/translation.json";
 import az from "./locales/az/translation.json";
-import navAz from "./locales/az/layout/nav.json";
-import navEn from "./locales/en/layout/nav.json";
+import navAz from "./locales/az/nav.json";
+import navEn from "./locales/en/nav.json";
 
 
 export const LANG_LOCAL_STORAGE_KEY = "selectedLanguage";

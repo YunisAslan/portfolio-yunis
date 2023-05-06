@@ -38,26 +38,34 @@
   }
 
   /* for loading animation */
-  @keyframes moveUpDown {
+  @keyframes opacityDisco {
     0% {
-      /* transform: translateY(0); */
       opacity: 0;
     }
     50% {
-      /* transform: translateY(-8px); */
       opacity: 1;
     }
     100% {
-      /* transform: translateY(0); */
       opacity: 0;
     }
   }
 
   .loader svg {
     position: relative;
-    animation: moveUpDown 1.3s ease-in-out infinite;
+    animation: opacityDisco 1.3s ease-in-out infinite;
   }
 
+  /* split text animation */
+  #split-text .char {
+    transform: translateY(100px);
+    transition: transform .6s ease;
+    background-image: var(--main-linear);
+    background-clip: text;
+  }
+
+  
+
+  /*  */
   
   /*  */
 }
@@ -69,5 +77,10 @@
   }
   .clip-bar2 {
     clip-path: circle(150% at 100% 100%);
+  }
+
+  /* text-split clip */
+  .clip-split {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
 }
