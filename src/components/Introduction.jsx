@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 
 import { gsap } from "gsap";
 import SplitType from "split-type";
+import Particles from "./ui/Particles";
 
 const Introduction = () => {
   const { t } = useTranslation();
@@ -27,6 +28,9 @@ const Introduction = () => {
   return (
     <>
       <section className="introduction flex flex-col items-center mm:mt-32 lg:mt-24">
+        
+        <Particles />
+
         <h2
           ref={splitTextRef}
           id="split-text"

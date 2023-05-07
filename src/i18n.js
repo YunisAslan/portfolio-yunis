@@ -12,7 +12,7 @@ const selectedLanguage = localStorage.getItem(LANG_LOCAL_STORAGE_KEY);
 
 i18n.use(initReactI18next).init({
   lng: selectedLanguage || "en",
-  debug: true,
+  debug: false,
   resources: {
     en: {
       translation: en,

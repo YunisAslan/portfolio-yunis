@@ -21,10 +21,10 @@ const ProjectItem = ({ ...item }) => {
               onClick={() => window.open(`${item.project_address}`)}
               className="group mt-10 flex w-36 items-center space-x-5 rounded-md px-3 py-2 duration-500 group-hover:bg-blue-500"
             >
-              <span className="z-10 text-blue-500 group-hover:text-white dark:text-white">
+              <span className="text-blue-500 group-hover:text-white dark:text-white">
                 {t("projects.link_btn")}
               </span>
-              <HiOutlineArrowNarrowRight className="z-10 text-2xl text-blue-500 transition-all duration-500 group-hover:translate-x-3 group-hover:text-white dark:text-white" />
+              <HiOutlineArrowNarrowRight className="text-2xl text-blue-500 transition-all duration-500 group-hover:translate-x-3 group-hover:text-white dark:text-white" />
             </button>
           </div>
 
