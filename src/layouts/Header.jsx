@@ -20,6 +20,7 @@ const Header = () => {
 
   return (
     <>
+    
       <header
         ref={headerRef}
         className="flex h-32 items-center justify-between mm:px-5 md:px-12 lg:px-32"
