@@ -8,8 +8,10 @@ import Button from "../components/ui/Button";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
+  const { t } = useTranslation();
   const formElement = useRef();
   const [successMsg, setSusccessMsg] = useState(false);
 
@@ -17,8 +19,7 @@ const ContactForm = () => {
   const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
   const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
 
-  const requiredMsg = "Please fill out required fields";
-  const maxSymbolMsg = "Maksimum 20 simvol ola bilər";
+  const requiredMsg = t("contact.requiredValidation");
 
   const formik = useFormik({
     initialValues: {
@@ -30,13 +31,13 @@ const ContactForm = () => {
     validationSchema: Yup.object({
       name: Yup.string()
         .required(requiredMsg)
-        .max(20, "Please limit your input to 20 characters or less"),
+        .max(20, t("contact.name_input.maxValidation")),
       email: Yup.string()
         .required(requiredMsg)
-        .email("Please enter a valid email address"),
+        .email(t("contact.email_input.validation")),
       message: Yup.string()
         .required(requiredMsg)
-        .min(10, "The input must be a minimum of 10 characters"),
+        .min(10, t("contact.message_input.minValidation")),
     }),
 
     onSubmit: (values, { resetForm }) => {
@@ -81,13 +82,13 @@ const ContactForm = () => {
             htmlFor="name"
             className="absolute top-5 pl-3 text-sm font-[600] text-taxonomyBlack"
           >
-            Name
+            {t("contact.name_input.label")}
           </label>
           <input
             type="text"
             name="name"
             id="name"
-            placeholder="What Should I call you ?"
+            placeholder={t("contact.name_input.placeholder")}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.name}
@@ -111,13 +112,13 @@ const ContactForm = () => {
             htmlFor="email"
             className="absolute top-5 pl-3 text-sm font-[600] text-taxonomyBlack"
           >
-            Email Address
+            {t("contact.email_input.label")}
           </label>
           <input
             type="email"
             name="email"
             id="email"
-            placeholder="Where should I respond ?"
+            placeholder={t("contact.email_input.placeholder")}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.email}
@@ -141,14 +142,14 @@ const ContactForm = () => {
             htmlFor="message"
             className="absolute top-4 pl-3 text-sm font-[600] text-taxonomyBlack"
           >
-            Message
+            {t("contact.message_input.label")}
           </label>
           <textarea
             name="message"
             id="message"
             cols="30"
             rows="10"
-            placeholder="How can I help you"
+            placeholder={t("contact.message_input.placeholder")}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.message}
@@ -173,7 +174,7 @@ const ContactForm = () => {
           className="button-left left relative mt-5 mm:w-72 sm:w-[30rem]"
           variant="primary"
         >
-          Submit
+          {t("contact.submit_btn")}
         </Button>
       </form>
 
@@ -187,10 +188,8 @@ const ContactForm = () => {
             transition={{ duration: 0.5, ease: "easeInOut" }}
           >
             <span className="flex items-center px-2">
-              <MdDone />{" "}
-              <span className="pl-2 text-sm">
-                The message sent successfully.
-              </span>
+              <MdDone />
+              <span className="pl-2 text-sm">{t("contact.successMsg")}</span>
             </span>
           </motion.div>
         )}

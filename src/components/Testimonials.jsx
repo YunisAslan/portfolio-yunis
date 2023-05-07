@@ -6,14 +6,17 @@ import TestimonialInfo from "../data/TestimonialInfo.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import "swiper/css";
+import { useTranslation } from "react-i18next";
 
 const TestimonialContainer = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="testimonials-section relative px-10 py-10">
         <div className="testimonial-head flex flex-col items-center justify-center">
           <h2 className="bg-gradient-main bg-clip-text p-1 font-bold text-transparent dark:text-white mm:text-4xl md:text-5xl">
-            Testimonials
+            {t("testimonials.title")}
           </h2>
         </div>
 

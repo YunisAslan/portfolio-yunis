@@ -1,4 +1,4 @@
-import { Suspense, lazy, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 // MAIN COMPONENTS
 import Footer from "./layouts/Footer";
@@ -34,6 +34,7 @@ function App() {
         <BrowserRouter>
           <GradientIcons />
           {/* that's the svg generator.It affect all gradient icons */}
+          
           <Header />
 
           <Routes>

@@ -1,6 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Testimonial = ({ ...oneInfo }) => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="testimonial group flex justify-center">
@@ -9,14 +12,14 @@ const Testimonial = ({ ...oneInfo }) => {
 
           <div className="testimonial-content pt-4">
             <p className="text-[15px] dark:text-gray-100">
-              {oneInfo.testimonial_text}
+              {t(oneInfo.testimonial_text)}
             </p>
           </div>
 
           <div className="profile flex items-center justify-between pt-8">
             <h2 className="text-base font-[600] italic text-taxonomyBlack dark:text-gray-100">
-              <span className="text-lg text-blue-500">@</span>
-              {oneInfo.testimonial_person}
+              <span className="text-lg text-blue-500">@ </span>
+              {t(oneInfo.testimonial_person)}
             </h2>
 
             <div className="h-16 w-16 overflow-hidden rounded-full">

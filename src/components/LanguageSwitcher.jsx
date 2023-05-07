@@ -11,7 +11,9 @@ const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
 
   const [openMenu, setOpenMenu] = useState(false);
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState(
+    localStorage.getItem(LANG_LOCAL_STORAGE_KEY) || "en"
+  );
   const menuRef = useRef(null);
   const buttonRef = useRef(null);
 

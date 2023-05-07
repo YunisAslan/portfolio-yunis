@@ -3,5 +3,78 @@
     "title": "Hi, I'm Yunis.",
     "location": "Baku",
     "detail": "Currently, I'm engaged in the development of the frontend of websites using modern technologies."
+  },
+  "skills": {
+    "title": "Skills",
+    "detail": "I mainly use these technologies for projects."
+  },
+  "projects": {
+    "main_title": "Projects",
+    "detail": "Check out my latest projects that showcase my skills and expertise in web development.",
+    "link_btn": "Preview",
+    "project_1": {
+      "title": "Edumy",
+      "detail": "Edumy offers a modern online course platform using innovative technologies. A site created with React library has add to cart, sorting, form validations, pagination and many other features. In addition, technologies such as Tailwindcss, Redux Toolkit, EmailJS, Framer-motion, Formik and Yup were used."
+    },
+    "project_2": {
+      "title": "Soon",
+      "detail": "soon."
+    }
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "testimonial_1": {
+      "rate": "Dear Yunis, good luck in your future endeavors. Looking forward to working with you. Your skills and yourself are seriously amazing.",
+      "person": "Alpay Abdullayev"
+    },
+    "testimonial_2": {
+      "rate": "Yunis is my most educated, smartest, most well-educated personality and student. I am proud that a Lion passed through my life and you cannot be forgotten. You are my brand student.",
+      "person": "Anvar Khalid"
+    },
+    "testimonial_3": {
+      "rate": "He is one of the most knowledgeable and hard working developers I have ever met. I have no doubt that he will succeed.",
+      "person": "Elmir Sultan"
+    },
+    "testimonial_4": {
+      "rate": "Yunis, he is skilled and very hardworking. I think he would be a great developer for teamwork. The sites he writes are modern and look great. Good luck in your future career!",
+      "person": "Mehriban Khalilova"
+    },
+    "testimonial_5": {
+      "rate": "Patience and knowledge are the two most important things for a developer. You have both of them. Everyone will see it not as a word, but as a result in projects!",
+      "person": "Burhan Hasanli"
+    }
+  },
+  "footer": {
+    "detail": "Copyright \u00A9 2023 Yunis Aslanov. All rights reserved."
+  },
+  "aboutme": {
+    "title": "Hi again, I'm Yunis.",
+    "paragraph_1": "I am a junior front-end developer, living in Baku. I enjoy working with new technologies and developing projects. I can develop fast and dynamic web pages for front-end.",
+    "paragraph_2": "Currently, I work as a freelancer and study as a second-year student at Azerbaijan Technical University.",
+    "paragraph_3": "Outside of development, I love reading books and listening to different styles of music. I also enjoy spending time with my friends and family.",
+    "link_p": "If you want to chat, feel free to",
+    "reach": "reach out.",
+    "download": "Download CV"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "requiredValidation": "Please fill out required fields",
+    "submit_btn": "Submit",
+    "successMsg": "The message sent successfully.",
+    "name_input": {
+      "label": "Name",
+      "placeholder": "What Should I call you ?",
+      "maxValidation": "Please limit your input to 20 characters or less"
+    },
+    "email_input": {
+      "label": "Email Address",
+      "placeholder": "Where should I respond ?",
+      "validation": "Please enter a valid email address"
+    },
+    "message_input": {
+      "label": "Message",
+      "placeholder": "How can I help you ?",
+      "minValidation": "The input must be a minimum of 10 characters"
+    }
   }
 }

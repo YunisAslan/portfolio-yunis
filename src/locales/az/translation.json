@@ -3,5 +3,78 @@
     "title": "Salam, mən Yunis.",
     "location": "Bakı",
     "detail": "Hal-hazırda modern texnologiyalarla çalışaraq, web saytların front hissəsinin inkişafı ilə məşğulam."
+  },
+  "skills": {
+    "title": "Bacarıqlar",
+    "detail": "Layihələr üçün əsasən bu texnologiyalardan istifadə edirəm."
+  },
+  "projects": {
+    "main_title": "Layihələr",
+    "detail": "Bacarıq və təcrübəmi nümayiş etdirən ən son layihələrimə baxın.",
+    "link_btn": "Önizləmə",
+    "project_1": {
+      "title": "Edumy",
+      "detail": "Edumy, innovativ texnologiyalardan istifadə edərək müasir onlayn kurs platforması təklif edir. React kitabxanası ilə yaradılmış sayt səbətə əlavə et, sortlama, form validasiyaları, pagination və bir çox başqa özəlliklərə sahibdir. Əlavə olaraq isə Tailwindcss, Redux Toolkit, EmailJS, Framer-motion, Formik və Yup kimi texnologiyalardan istifadə edilib."
+    },
+    "project_2": {
+      "title": "Tezliklə",
+      "detail": "tezliklə."
+    }
+  },
+  "testimonials": {
+    "title": "Rəylər",
+    "testimonial_1": {
+      "rate": "Yunis Bəy, sizə gələcək işlərinizdə uğurlar. Sizinlə birgə işləmək arzusu ilə.   Bacarıqlarınız və özünüz ciddən çox gözəldir.",
+      "person": "Alpay Abdullayev"
+    },
+    "testimonial_2": {
+      "rate": "Yunis mənim ən savadlı, ən ağıllı, ən tərbiyəli, yüksək ali dəyərlərə sahib bir şəxsiyyət, tələbəmdir. Qürur duyuram ki, həyatımdan bir Aslan keçdi və sizi unutmaq olmaz. Siz mənim brend tələbəmsiniz.",
+      "person": "Ənvər Xalid"
+    },
+    "testimonial_3": {
+      "rate": "Gördüyüm ən savadlı və çalışqan developerlərdən biridir. Onun uğurlu olacağından heç bir şübhəm yoxdur.",
+      "person": "Elmir Sultan"
+    },
+    "testimonial_4": {
+      "rate": "Yunis, o həqiqətən həvəslidir və çox çalışqandır. Düşünürəm ki, teamwork üçün əla developer olar. Yazdığı saytlar müasir və əla görünür. Gələcək karyerasında uğurlar!",
+      "person": "Mehriban Xəlilova"
+    },
+    "testimonial_5": {
+      "rate": "Səbr ve bilik developer üçün ən çox lazım olan iki şeydir. Bunların iksidə sizdə var. Bunu bir söz olaraq yox, nəticə olaraq lahiyələrdə hər kəs görəcək!",
+      "person": "Burhan Həsənli"
+    }
+  },
+  "footer": {
+    "detail": "\u00A9 2023 Yunis Aslanov. Bütün hüquqlar qorunur."
+  },
+  "aboutme": {
+    "title": "Bir daha salam, Mən Yunis.",
+    "paragraph_1": "Mən Bakıda yaşayan, front-end development ilə məşğul olan biriyəm. Yeni texnologiyalarla işləməkdən və layihələr hazırlamaqdan zövq alıram. Front-end üçün sürətli və dinamik veb səhifələr hazırlaya bilirəm.",
+    "paragraph_2": "Hazırda frilanser olaraq işləyirəm və Azərbaycan Texniki Universitetində 2-ci kurs tələbəsi kimi oxuyuram.",
+    "paragraph_3": "İşdən kənar, kitab oxumağı və müxtəlif üslublarda musiqilər dinləməyi sevirəm. Həmçinin dostlarım və ailəmlə vaxt keçirməkdən zövq alıram.",
+    "link_p": "Söhbət və ya sifariş etmək istəyirsinizsə, buyurun",
+    "reach": "buradan çat.",
+    "download": "CV yüklə"
+  },
+  "contact": {
+    "title": "Əlaqə Saxlayın",
+    "requiredValidation": "Tələb olunan sahələri doldurun",
+    "successMsg": "Mesajınız uğurla göndərildi.",
+    "submit_btn": "Göndər",
+    "name_input": {
+      "label": "Ad",
+      "placeholder": "Sizi necə çağıra bilərəm ?",
+      "maxValidation": "Adınız 20 simvoldan az olmalıdır"
+    },
+    "email_input": {
+      "label": "Email Adresi",
+      "placeholder": "Cavabı hara göndərim ?",
+      "validation": "Düzgün email ünvanı daxil edin"
+    },
+    "message_input": {
+      "label": "Mesaj",
+      "placeholder": "Sizə necə kömək edə bilərəm ?",
+      "minValidation": "Ən az 10 simvol daxil etməlisiniz"
+    }
   }
 }

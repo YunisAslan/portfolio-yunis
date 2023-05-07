@@ -1,4 +1,4 @@
-import React, {useRef, useEffect} from "react";
+import React, { useRef, useEffect } from "react";
 
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { useTheme } from "../hooks/useTheme";
@@ -11,19 +11,18 @@ const Introduction = () => {
   const { t } = useTranslation();
   const { theme } = useTheme();
 
-   const splitTextRef = useRef(null);
+  const splitTextRef = useRef(null);
 
-   useEffect(() => {
-     const splitText = new SplitType(splitTextRef.current);
+  useEffect(() => {
+    const splitText = new SplitType(splitTextRef.current);
 
-     gsap.to(".char", {
-       y: 0,
-       stagger: 0.05,
-       delay: 0.2,
-       duration: 0.1,
-     });
-     
-   }, []);
+    gsap.to(".char", {
+      y: 0,
+      stagger: 0.05,
+      delay: 0.2,
+      duration: 0.1,
+    });
+  }, []);
 
   return (
     <>
@@ -31,7 +30,8 @@ const Introduction = () => {
         <h2
           ref={splitTextRef}
           id="split-text"
-          className="clip-split bg-gradient-main bg-clip-text font-bold text-transparent dark:text-white mm:text-5xl lg:text-7xl"
+          className="clip-split bg-gradient-main bg-clip-text font-bold text-transparent dark:text-white 
+          mm:text-5xl sm:text-6xl lg:text-7xl -z-10 text-center px-5"
         >
           {t("introduction.title")}
         </h2>

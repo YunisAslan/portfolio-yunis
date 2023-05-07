@@ -11,7 +11,7 @@ const BackHomeBtn = () => {
     <>
       <Button
         onClick={() => navigate("/")}
-        className="relative bottom-3 h-14 w-14 text-[30px] mm:left-10 md:left-[70px] lg:left-48"
+        className="relative bottom-3 h-14 w-14 text-[30px] mm:left-10 md:left-[70px] lg:left-40"
         variant="circle"
       >
         <BiArrowBack />

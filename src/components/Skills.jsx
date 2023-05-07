@@ -2,20 +2,21 @@ import React from "react";
 
 import { skillItems } from "./SkillItems";
 import SkillBox from "./SkillBox";
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <section className="skills-section mt-72 bg-[#FFF] px-20 py-20 dark:bg-blue-300/5">
         <div className="skills-head flex flex-col items-center justify-center">
-          <h2
-            className="bg-gradient-main bg-clip-text p-1 font-bold text-transparent dark:text-white mm:text-4xl md:text-5xl"
-          >
-            Skills
+          <h2 className="bg-gradient-main bg-clip-text p-1 font-bold text-transparent dark:text-white mm:text-4xl md:text-5xl">
+            {t("skills.title")}
           </h2>
 
           <p className="mt-1 bg-gradient-main bg-clip-text text-center text-lg text-transparent dark:text-white">
-            I mainly use these technologies for projects.
+            {t("skills.detail")}
           </p>
         </div>
 

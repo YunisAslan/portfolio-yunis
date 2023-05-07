@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import {
   AiOutlineTwitter,
@@ -9,6 +10,9 @@ import {
 } from "react-icons/ai";
 
 const Footer = () => {
+
+  const {t} = useTranslation()
+
   return (
     <>
       <footer className="footer mt-32 flex h-52 flex-col items-center bg-[#fff] dark:bg-blue-300/5">
@@ -56,7 +60,7 @@ const Footer = () => {
         </div>
 
         <span className="mt-10 flex items-center text-gray-600 dark:text-white mm:text-xs sm:text-sm">
-          Copyright &copy; 2023 Yunis Aslanov. All rights reserved.
+          {t("footer.detail")}
         </span>
       </footer>
     </>

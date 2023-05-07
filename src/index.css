@@ -20,7 +20,7 @@
   }
 
   .menu-container {
-    @apply clip-bar1 invisible absolute top-28 z-50 flex h-[150px] w-64 flex-col justify-center rounded-xl bg-white pl-4 text-lg font-semibold opacity-0 shadow-menuShadow transition-all duration-500 mm:right-10 md:right-16 lg:right-44;
+    @apply clip-bar1 invisible absolute top-28 flex h-[150px] w-64 flex-col justify-center rounded-xl bg-white pl-4 text-lg font-semibold opacity-0 shadow-menuShadow transition-all duration-500 mm:right-10 md:right-16 lg:right-44;
   }
 
   .menu-container.active {
@@ -58,15 +58,13 @@
   /* split text animation */
   #split-text .char {
     transform: translateY(100px);
-    transition: transform .6s ease;
+    transition: transform 0.6s ease;
     background-image: var(--main-linear);
     background-clip: text;
   }
 
-  
-
   /*  */
-  
+
   /*  */
 }
 
