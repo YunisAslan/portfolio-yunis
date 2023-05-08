@@ -23,7 +23,7 @@ const About = () => {
       <BackHomeBtn />
 
       <section className="about-section flex flex-col items-center justify-center">
-        <div className="own-picture flex justify-center mm:w-[300px] sm:w-[450px]">
+        <div className="own-picture flex justify-center mm:w-[300px] sm:w-[450px] object-cover">
           <img src={OwnImg} alt="" className="rounded-xl" />
         </div>
 

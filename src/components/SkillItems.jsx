@@ -6,6 +6,7 @@ import { ReactComponent as TailwindSvg } from "../assets/images/skills/tailwind.
 import { ReactComponent as JsSvg } from "../assets/images/skills/javascript.svg";
 import { ReactComponent as ReactSvg } from "../assets/images/skills/react.svg";
 import { ReactComponent as ReduxSvg } from "../assets/images/skills/redux.svg";
+import { ReactComponent as GitSvg } from "../assets/images/skills/git.svg";
 
 export const skillItems = [
   {
@@ -25,5 +26,8 @@ export const skillItems = [
   },
   {
     icon: <ReduxSvg className="fill-taxonomyBlack dark:fill-white" />,
+  },
+  {
+    icon: <GitSvg className="fill-taxonomyBlack dark:fill-white" />,
   },
 ];
