@@ -47,7 +47,7 @@ const About = () => {
               {t("aboutme.reach")}
             </NavLink>
           </p>
-          <a href={MYCV} download>
+          <a href={MYCV}>
             <Button className="button-left left mt-5" variant="primary">
               {t("aboutme.download")}
             </Button>
