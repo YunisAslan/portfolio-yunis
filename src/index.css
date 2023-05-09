@@ -20,7 +20,7 @@
   }
 
   .menu-container {
-    @apply clip-bar1 invisible absolute top-28 flex h-[150px] w-64 flex-col justify-center rounded-xl bg-white pl-4 text-lg font-semibold opacity-0 shadow-menuShadow transition-all duration-500 mm:right-10 md:right-16 lg:right-44;
+    @apply clip-bar1 invisible absolute top-28 flex h-[150px] w-64 flex-col justify-center rounded-xl bg-white pl-4 text-lg font-semibold opacity-0 shadow-menuShadow transition-all duration-500 mm:right-10 md:right-16 lg:right-44 z-10;
   }
 
   .menu-container.active {
