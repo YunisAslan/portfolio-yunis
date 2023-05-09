@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 import { LANG_LOCAL_STORAGE_KEY } from "../i18n";
 
 const LanguageSwitcher = () => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const [openMenu, setOpenMenu] = useState(false);
   const [language, setLanguage] = useState(
@@ -50,6 +50,7 @@ const LanguageSwitcher = () => {
     <>
       <div className="relative">
         <Button
+          title={t("introduction.lang_title")}
           ref={buttonRef}
           variant="ghost"
           onClick={() => setOpenMenu(!openMenu)}

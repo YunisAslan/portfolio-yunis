@@ -1,5 +1,6 @@
 {
   "introduction": {
+    "lang_title": "Change Language",
     "title": "Hi, I'm Yunis.",
     "location": "Baku",
     "detail": "Currently, I'm engaged in the development of the frontend of websites using modern technologies."
@@ -50,9 +51,9 @@
   },
   "aboutme": {
     "title": "Hi again, I'm Yunis.",
-    "paragraph_1": "I am a junior front-end developer, living in Baku. I enjoy working with new technologies and developing projects. I can develop fast and dynamic web pages for front-end.",
+    "paragraph_1": "I'm a front-end JavaScript developer with a strong focus on React. I enjoy working, learning new technologies and developing projects. I am someone who is passionate and ambitious about this work. I am ready to perform high quality work with consistency and perseverance, for you.",
     "paragraph_2": "Currently, I work as a freelancer and study as a second-year student at Azerbaijan Technical University.",
-    "paragraph_3": "Outside of development, I love reading books and listening to different styles of music. I also enjoy spending time with my friends and family.",
+    "paragraph_3": "Outside of development, I love reading books and listening to different styles of music. I also enjoy spending time with my friends.",
     "link_p": "If you want to chat, feel free to",
     "reach": "reach out.",
     "download": "Download CV"

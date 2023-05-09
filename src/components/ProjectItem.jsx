@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import { AiOutlineGithub } from "react-icons/ai";
 
 const ProjectItem = ({ ...item }) => {
   const { t } = useTranslation();
@@ -17,15 +18,25 @@ const ProjectItem = ({ ...item }) => {
               {t(item.project_detail)}
             </p>
 
-            <button
-              onClick={() => window.open(`${item.project_address}`)}
-              className="group mt-10 flex w-36 items-center space-x-5 rounded-md px-3 py-2 duration-500 group-hover:bg-blue-500"
-            >
-              <span className="text-blue-500 group-hover:text-white dark:text-white">
-                {t("projects.link_btn")}
-              </span>
-              <HiOutlineArrowNarrowRight className="text-2xl text-blue-500 transition-all duration-500 group-hover:translate-x-3 group-hover:text-white dark:text-white" />
-            </button>
+            <div className="flex gap-5">
+              <button
+                onClick={() => window.open(`${item.project_address}`)}
+                className="group mt-10 flex w-36 items-center space-x-5 rounded-md px-3 py-2 duration-500 group-hover:bg-blue-500"
+              >
+                <span className="text-blue-500 group-hover:text-white dark:text-white">
+                  {t("projects.link_btn")}
+                </span>
+                <HiOutlineArrowNarrowRight className="text-2xl text-blue-500 transition-all duration-500 group-hover:translate-x-3 group-hover:text-white dark:text-white" />
+              </button>
+
+              <button
+                title="Repo link"
+                onClick={() => window.open(`${item.project_repo}`)}
+                className="group mt-10 flex items-center justify-center rounded-md px-3 py-2 duration-500 group-hover:bg-taxonomyBlack group-hover:dark:bg-white"
+              >
+                <AiOutlineGithub className="text-2xl transition-all duration-500 group-hover:text-white dark:text-white group-hover:dark:text-taxonomyBlack" />
+              </button>
+            </div>
           </div>
 
           <div className="project-right overflow-hidden rounded-md mm:col-span-12 lg:col-span-6">

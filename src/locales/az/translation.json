@@ -1,5 +1,6 @@
 {
   "introduction": {
+    "lang_title": "Dili Dəyişdir",
     "title": "Salam, mən Yunis.",
     "location": "Bakı",
     "detail": "Hal-hazırda modern texnologiyalarla çalışaraq, web saytların front hissəsinin inkişafı ilə məşğulam."
@@ -50,9 +51,9 @@
   },
   "aboutme": {
     "title": "Bir daha salam, Mən Yunis.",
-    "paragraph_1": "Mən Bakıda yaşayan, front-end development ilə məşğul olan biriyəm. Yeni texnologiyalarla işləməkdən və layihələr hazırlamaqdan zövq alıram. Front-end üçün sürətli və dinamik veb səhifələr hazırlaya bilirəm.",
+    "paragraph_1": "Əsasən React ağırlıqlı front-end JavaScript development ilə məşğulam. Mən işləməkdən, yeni texnologiyalar öyrənməkdən və layihələr hazırlamaqdan zövq alıram. Bu işə həvəsli və iddialı biriyəm. Ardıcıllıq və əzmkarlıqla, sizin üçün yüksək keyfiyyətli işlər təqdim etməyə hazıram.",
     "paragraph_2": "Hazırda frilanser olaraq işləyirəm və Azərbaycan Texniki Universitetində 2-ci kurs tələbəsi kimi oxuyuram.",
-    "paragraph_3": "İşdən kənar, kitab oxumağı və müxtəlif üslublarda musiqilər dinləməyi sevirəm. Həmçinin dostlarım və ailəmlə vaxt keçirməkdən zövq alıram.",
+    "paragraph_3": "İşdən kənar, kitab oxumağı və müxtəlif üslublarda musiqilər dinləməyi sevirəm. Həmçinin dostlarımla vaxt keçirməkdən zövq alıram.",
     "link_p": "Söhbət və ya sifariş etmək istəyirsinizsə, buyurun",
     "reach": "buradan çat.",
     "download": "CV yüklə"

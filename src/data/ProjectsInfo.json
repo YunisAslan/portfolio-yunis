@@ -2,6 +2,7 @@
   {
     "id": 1,
     "project_address": "https://edumy-course.vercel.app",
+    "project_repo": "https://github.com/YunisAslan/edumy-course",
     "project_img": "https://res.cloudinary.com/drx9zihrg/image/upload/v1682620542/Portfolio/Screenshot_159_k2wjxn.png",
     "project_title": "projects.project_1.title",
     "project_detail": "projects.project_1.detail"
@@ -9,6 +10,7 @@
   {
     "id": 2,
     "project_address": "x",
+    "project_repo": "",
     "project_img": "",
     "project_title": "projects.project_2.title",
     "project_detail": "projects.project_2.detail"
