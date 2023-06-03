@@ -7,15 +7,17 @@ const ThemeSwitcher = () => {
   const { theme, setTheme } = useTheme();
 
   const handleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    setTheme(theme === "light" ? "dark" : "light");
   };
 
   useEffect(() => {
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
+    if (theme === "light") {
+      document.documentElement.classList.add("light");
       document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    } else {
+      document.documentElement.classList.add("dark");
+      document.documentElement.classList.remove("light");
       localStorage.removeItem("theme");
     }
   }, [theme]);
@@ -23,7 +25,7 @@ const ThemeSwitcher = () => {
   return (
     <>
       <Button onClick={handleTheme} variant="ghost">
-        {theme === "dark" ? <BsMoon /> : <BsSun />}
+        {theme === "light" ? <BsSun /> : <BsMoon />}
       </Button>
     </>
   );
