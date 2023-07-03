@@ -26,7 +26,7 @@ const Skills = () => {
           ))}
         </div>
 
-        <p className="bg-clip-text pt-3 text-center text-lg text-transparent dark:text-white">
+        <p className="text-taxonomyBlack bg-clip-text pt-3 text-center text-lg text-transparent dark:text-white">
           {t("skills.detail_plus")}
         </p>
       </section>
